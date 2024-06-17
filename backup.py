@@ -5,8 +5,8 @@ import schedule
 import time
 
 # 定义源目录和目标目录的路径
-SOURCE_DIR = "C:/Users/Tim/Pictures/Screenshots"
-DESTINATION_DIR = "C:/Users/Tim/Desktop/Backups"
+SOURCE_DIR = "/Users/xcc/Pictures/Screenshots"
+DESTINATION_DIR = "/Users/xcc/Desktop/Backups"
 
 def copy_folder_to_directory(source, dest):
     """将源目录复制到目标目录，以当前日期命名目标目录"""
@@ -27,7 +27,7 @@ def schedule_backup(time_str):
     schedule.every().day.at(time_str).do(lambda: copy_folder_to_directory(SOURCE_DIR, DESTINATION_DIR))
 
 def main():
-    backup_time = "18:57"  # 设定备份时间
+    backup_time = "19:00"  # 设定备份时间
     schedule_backup(backup_time)
     
     print(f"Backup scheduled daily at {backup_time}")
