@@ -1,14 +1,12 @@
-# 自动备份脚本
+# Automated Backup Script
 
-这个 Python 脚本用于每天定时将指定文件夹中的内容复制到备份目录中。
+This Python script automates the process of backing up a specified folder to a destination directory on a daily basis.
 
-## 前提条件
+## Prerequisites
 
 - Python 3.x
-- `shutil` 库（Python 标准库中自带）
-- `schedule` 库
-- `time` 库（Python 标准库中自带）
+- `schedule` library
 
-你可以使用 pip 安装 `schedule` 库：
+You can install the required library using pip:
 
 pip install schedule
