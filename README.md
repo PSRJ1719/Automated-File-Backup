@@ -4,9 +4,9 @@ This Python script automates the process of backing up a specified folder to a d
 
 ## Prerequisites
 
-schedule 
-os
-shutil
-datetime
-schedule
-time
+-schedule 
+-os
+-shutil
+-datetime
+-schedule
+-time
