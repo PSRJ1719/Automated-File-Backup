@@ -25,24 +25,6 @@ This repository contains the necessary files to set up an automated backup scrip
      launchctl load ~/Library/LaunchAgents/com.user.backup.plist
      
 
-4. **Unloading the LaunchAgent (if needed)**:
-   - If you need to unload the LaunchAgent, use the following command:
-     
-     launchctl unload ~/Library/LaunchAgents/com.user.backup.plist
-
-## Logs
-
-- Output logs can be found at `/tmp/com.user.backup.out`.
-- Error logs can be found at `/tmp/com.user.backup.err`.
-
-## Notes
-
-- Ensure that the `script.py` file has execute permissions:
-  ```sh
-  chmod +x /path/to/your/script.py
-
-
-
 # Automated File Backup
 
 This Python script automates the process of backing up a specified folder to a destination directory on a daily basis.
