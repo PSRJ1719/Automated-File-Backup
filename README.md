@@ -1,3 +1,16 @@
+# Automated File Backup
+
+This Python script automates the process of backing up a specified folder to a destination directory on a daily basis.
+
+## Prerequisites
+
+-os
+-shutil
+-datetime
+-schedule
+-time
+
+
 # Automated Backup Script Setup
 
 This repository contains the necessary files to set up an automated backup script on macOS using `launchd`.
@@ -18,21 +31,7 @@ This repository contains the necessary files to set up an automated backup scrip
      
      cp com.user.backup.plist ~/Library/LaunchAgents/
      
-
 3. **Load the LaunchAgent**:
    - Load the LaunchAgent using `launchctl`:
      
      launchctl load ~/Library/LaunchAgents/com.user.backup.plist
-     
-
-# Automated File Backup
-
-This Python script automates the process of backing up a specified folder to a destination directory on a daily basis.
-
-## Prerequisites
-
--os
--shutil
--datetime
--schedule
--time
